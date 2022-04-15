@@ -39,6 +39,24 @@ console.log(hasUniqueChars('asdfghjkl;'))
 
 //3) Pangram Sentence
 
+const str = 'The quick brown fox jumps over the lazy dog';
+const isPangram = (str = '') => {
+   str = str.toLowerCase();
+   const { length } = str;
+   const alphabets = 'abcdefghijklmnopqrstuvwxyz';
+   const alphaArr = alphabets.split('');
+   for(let i = 0; i < length; i++){
+      const el = str[i];
+      const index = alphaArr.indexOf(el);
+      if(index !== -1){
+         alphaArr.splice(index, 1);
+      };
+   };
+   return !alphaArr.length;
+};
+console.log(isPangram(str));
+
+
 
 //4) 4) Longest Word
 // Write a function, find_longest_word, that takes a list of words and returns the length of the longest one.
