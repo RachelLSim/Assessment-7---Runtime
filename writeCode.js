@@ -17,7 +17,7 @@ addToZero([1, 2, 3, -2]);
 
 console.log(result)
 
-//
+// O(n^2) Quadratic Time
 
 ////2) Unique Chars
 //Write a function that takes in a single word, as a string. It should return True if that word contains only unique characters. Return False otherwise.
@@ -35,4 +35,15 @@ console.log(result)
   }
 console.log(hasUniqueChars('asdfghjkl;'))
 
+// O(n) Linear Time
+
 //3) Pangram Sentence
+
+
+//4) 4) Longest Word
+// Write a function, find_longest_word, that takes a list of words and returns the length of the longest one.
+
+// For example:
+
+// findLongestWord(["hi", "hello"]);
+// -> 5
